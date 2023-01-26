@@ -13,7 +13,7 @@ body {
 
 .result {
 	margin-top: 0 !important;
-	font-size: 25px;
+	font-size: 15px;
 	color: darkred;
 	text-decoration: underline;
 }
