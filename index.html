@@ -1,30 +1,40 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Заголовок страницы</title>
-    <link rel="manifest" href="manifest.json">
-</head>
-<body>
-    <div>Время работы:</div>
-    <div id="vremy"></div>
-    <div>Разрешенная зарплата с учётом 15%:</div>
-    <div id="summa"></div>
-    <div>Разница:</div>
-    <div id="raznica"></div>
-    <div>Закрыть разработку на:</div>
-    <div id="trf"></div>
-</body>
-    <script> const vremy = prompt("Введите время: ")*60
-const procent = vremy*15/100
-const vremy15 = vremy+procent
-const summa = Math.round(vremy15*8.20)
-const tarif = 490
-const zarplata = prompt("Введите зарплату: ")
-const raznica = summa-zarplata
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="/style.css" rel="stylesheet" type="text/css" />
+		<link rel="manifest" href="/manifest.json" />
 
-document.getElementById("vremy").innerHTML = vremy/60
-document.getElementById("summa").innerHTML = summa
-document.getElementById("raznica").innerHTML = raznica
-document.getElementById("trf").innerHTML = (raznica/tarif).toFixed(3) </script>
+		<title>Расчет зарплаты</title>
+	</head>
+	<body>
+		<div class="header">
+			<p class="title">Время работы:&nbsp</p>
+			<p class="result" id="vremy"></p>
+			<p class="title">&nbsp часов</p>
+		</div>
+		<div class="header">
+			<div class="title">Зарплата по терминалу:&nbsp</div>
+			<div class="result" id="zarplata"></div>
+			<p class="title">&nbsp рублей</p>
+		</div>
+		<div class="header">
+			<div class="title">Разрешенная зарплата с учётом 15%:&nbsp</div>
+			<div class="result" id="summa"></div>
+			<p class="title">&nbsp рублей</p>
+		</div>
+		<div class="header">
+			<div class="title">Разница:&nbsp</div>
+			<div class="result" id="raznica"></div>
+			<p class="title">&nbsp рублей</p>
+		</div>
+		<div class="header">
+			<div class="title">Поставить разработку:&nbsp</div>
+			<div class="result" id="trf"></div>
+			<p class="title">&nbsp часов</p>
+		</div>
+	</body>
+	<script src="/js/code.js"></script>
 </html>
