@@ -1,0 +1,19 @@
+body {
+	margin: 25px;
+}
+.title {
+	margin-top: 0 !important;
+	font-size: 25px;
+}
+.header {
+	display: flex;
+
+	margin-bottom: 10px;
+}
+
+.result {
+	margin-top: 0 !important;
+	font-size: 25px;
+	color: darkred;
+	text-decoration: underline;
+}
