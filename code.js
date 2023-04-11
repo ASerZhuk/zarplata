@@ -1,5 +1,5 @@
 const vremy = prompt('Введите отработанное время: ')
-const procent = 8.20*60*1.15
+const procent = 8.70*60*1.15
 const zarplata = prompt('Введите зарплату: ')
 const summa = (zarplata/procent).toFixed(1)
 const raznica = (vremy - summa).toFixed(1)
